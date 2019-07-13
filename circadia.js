@@ -9,7 +9,7 @@ class Circadia {
       localStorage.setItem('activated', 'false');
     }
 
-    if (localStorage.getItem('activated') == 'true') {
+    if (localStorage.getItem('activated') === 'true') {
       this.activate()
     } else {
       this.deactivate()
@@ -32,7 +32,7 @@ class Circadia {
       var nodeComputedStyle = window.getComputedStyle(node);
       var parentNodeComputedStyle = window.getComputedStyle(node.parentNode);
 
-      if (nodeComputedStyle.backgroundColor == 'rgba(0, 0, 0, 0)' && parentNodeComputedStyle.backgroundColor == 'rgba(0, 0, 0, 0)') {
+      if (nodeComputedStyle.backgroundColor === 'rgba(0, 0, 0, 0)' && parentNodeComputedStyle.backgroundColor === 'rgba(0, 0, 0, 0)') {
         var originalColor = window.getComputedStyle(node).color;
         var parsedColor = this.parseRgb(originalColor);
         var luminance = this.relativeLuminance(parsedColor);
