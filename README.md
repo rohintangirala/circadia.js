@@ -10,7 +10,7 @@ Simply add the `circadia.js` file to your project and add the following `script`
 ```
 In another JavaScript file, first create an instance of the `Circadia` class:
 ```javascript
-var circadia = new Circadia();
+let circadia = new Circadia();
 ```
 Then, call the following methods to activate or deactivate the dark theme on your webpage, respectively:
 ```javascript
